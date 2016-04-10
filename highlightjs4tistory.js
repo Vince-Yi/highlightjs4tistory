@@ -60,7 +60,7 @@ $(function() {
 
 			var _brushName = $.trim(_tempLines.shift().replace(_starter, 'brush: '));
 			
-			_temp = _tempLines.join('\n');
+			_temp = $.trim(_tempLines.join('\n'));
 			_temp = '<pre><code class="' + _brushName + '">' + _temp + '</code></pre>';
 			
 			$blockquote.replaceWith(_temp);
